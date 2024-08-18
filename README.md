@@ -1,4 +1,4 @@
-# Maglen.github.io (forked from Saltette.github.io)
+# [Maglen.github.io](Maglen.github.io) (forked from Saltette.github.io)
 
 Phase 2 of Kalos timer for noteworthy cooldowns
 
