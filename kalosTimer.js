@@ -164,6 +164,35 @@ function startPhase() {
     systemIndicator();
 }
 
+function resetBoss() {
+    lasersCancel();
+    arrowsCancel();
+    fmaTimerEdit = '';
+    systemTimerEdit = '';
+    fmaEditSec = 0;
+    clearInterval(fmaEditCountdown);
+    document.getElementById('fma-edit').style.opacity = '0%';
+    systemEditSec = 0;
+    clearInterval(systemEditCountdown);
+    document.getElementById('system-edit').style.opacity = '0%';
+    bindClickLockoutSec = 0;
+    clearInterval(bindClickLockoutCountdown);
+    numSystemsOnline = 0;
+    phaseSec = 0;
+    clearInterval(phaseCountdown);
+    bindSec = 0;
+    clearInterval(bindCountdown);
+    changePhase(1);
+    clearInterval(breathCountdown);
+    breathSec = 0;
+    document.getElementById('breathTimer').innerHTML = breathSec;
+    clearInterval(diveCountdown);
+    diveSec = 0;
+    document.getElementById('diveTimer').innerHTML = diveSec;
+    numSystemsOnline = minSystems;
+    document.getElementById('systemsOnline').innerHTML = numSystemsOnline;``
+}
+
 function incSystems () {
     if (numSystemsOnline != maxSystems) {
         numSystemsOnline += 1;
