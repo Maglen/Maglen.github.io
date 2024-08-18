@@ -24,6 +24,7 @@ const arrowsCooldown = 15;
 
 const groggyDuration = 20;
 const testDuration = 50;
+const bind4sec = 4;
 const bind10Sec = 10;
 const bind15Sec = 15;
 const editDisplaySec = 1;
